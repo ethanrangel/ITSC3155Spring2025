@@ -85,8 +85,26 @@ class SandwichMachine:
         for ingredient in order_ingredients:
             amount = order_ingredients[ingredient]
             self.machine_resources[ingredient] -= amount
+        print(sandwich_size + " sandwich is ready. Bon appetit!")
 
 
 ### Make an instance of SandwichMachine class and write the rest of the codes ###
+machine1 = SandwichMachine(resources)
 
+while True:
+   users_choice = input("What would you like? (small/ medium/ large/ off/ report): ").lower()
+   if users_choice == "report":
+       print("Bread: {} slice(s)".format(machine1.machine_resources['bread']))
+       print("Ham: {} slice(s)".format(machine1.machine_resources['ham']))
+       print("Cheese: {} ounce(s)".format(machine1.machine_resources['cheese']))
+   elif users_choice in recipes:
+       item = recipes[users_choice]
+       if machine1.check_resources(item["ingredients"]):
+           total = machine1.process_coins()
+           if machine1.transaction_result(total, item["cost"]):
+               machine1.make_sandwich(users_choice, item["ingredients"])
+   elif users_choice == "off":
+       break
+   else:
+       print("Try again.")
 
