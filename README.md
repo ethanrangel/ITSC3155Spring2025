@@ -1,1 +1,1 @@
-# 3155Assignments
+repo storing ITSC 3155 Spring 2025 assignments
