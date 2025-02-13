@@ -1,14 +1,16 @@
 from BankAccount import BankAccount
-class CheckingAccount(BankAccount):
-   def __init__(self, customer_name, current_balance, minimum_balance, transfer_limit):
+class SavingsAccount(BankAccount):
+   def __init__(self, customer_name, current_balance, minimum_balance, interest):
        super().__init__(customer_name, current_balance, minimum_balance)
-       self.transfer_limit = transfer_limit
-def print_customer_information(self):
+       self.interest = interest
+
+
+   def print_customer_information(self):
        print(
            '''
-           Hello {}, Thank you for using {}. Here is your checking account information
+           Hello {}, Thank you for using {}. Here is your savings account information
            Current Balance: ${}
            Minimum Balance: ${}
-           Transfer Limit: ${} %
-           '''.format(self.customer_name, self.bank_title, self.current_balance, self.minimum_balance, self.transfer_limit)
+           Interest: ${} %
+           '''.format(self.customer_name, self.bank_title, self.current_balance, self.minimum_balance, self.interest)
        )
