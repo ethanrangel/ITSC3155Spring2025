@@ -1,5 +1,5 @@
-import CheckingAccount
-import SavingsAccount
+from CheckingAccount import CheckingAccount
+from SavingsAccount import SavingsAccount 
 
 # two instances
 checking_user = CheckingAccount("Ethan Rangel", 500, 100, 50, 6831125, 809401499)
