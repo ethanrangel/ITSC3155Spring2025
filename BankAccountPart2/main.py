@@ -1,9 +1,9 @@
-from CheckingAccount import CheckingAccount
-from BankAccountPart2.SavingsAccount import SavingsAccount
+import CheckingAccount
+import SavingsAccount
 
 # two instances
-checking_user = CheckingAccount("Ethan Rangel", 500, 100, 50)
-savings_user = SavingsAccount("Rich Guy", 100000, 10000, 2.5)
+checking_user = CheckingAccount("Ethan Rangel", 500, 100, 50, 6831125, 809401499)
+savings_user = SavingsAccount("Irfan Campara", 100000, 10000, 2.5, 6831126, 809401500)
 
 checking_user.deposit(200)
 checking_user.withdraw(300)
