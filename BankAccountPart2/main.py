@@ -1,5 +1,5 @@
 from CheckingAccount import CheckingAccount
-from SavingsAccount import SavingsAccount
+from BankAccountPart2.SavingsAccount import SavingsAccount
 
 # two instances
 checking_user = CheckingAccount("Ethan Rangel", 500, 100, 50)
