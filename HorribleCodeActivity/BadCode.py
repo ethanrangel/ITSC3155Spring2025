@@ -18,7 +18,7 @@ def main():
         possibleInputs15 = [add, subtract, multiply, divide]
         possibleInputs155555= ['add', 'subtract', 'multiply', 'divide']
         
-        print("Result" + str(possibleInputs15[possibleInputs155555.index(desiredInput)](int(number1), int(number2)))) #just horrible and not clean code in the slightest
+        print("Result" + str(possibleInputs15[possibleInputs155555.index(desiredInput)](int(number1), int(number2)))) #Not Clean Code
         
 def divide(number1, number2):
     
@@ -31,3 +31,12 @@ def add(number1, number2):
     return sum      
 def subtract(number1, number2):
     return number1 - number2 - number1 + number2  
+def multiply(number1, number2):
+    if number1 == "Hi I love mountain dew": #YAGNI
+        return "WHAT NO WAY I LOVE MOUNTAIN DEW AS WELL"
+    return number1 * number2
+def manhattandistance(number1, number2): #YAGNI
+    
+    abs(number1 - number2)
+if __name__=="__main__":
+    main()
