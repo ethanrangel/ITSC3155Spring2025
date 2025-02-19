@@ -20,4 +20,14 @@ def main():
         
         print("Result" + str(possibleInputs15[possibleInputs155555.index(desiredInput)](int(number1), int(number2)))) #just horrible and not clean code in the slightest
         
-        
+def divide(number1, number2):
+    
+    return number1 / number2
+def add(number1, number2): 
+    sum = 0
+    numberarray = [number1, number2]#Violates KISS
+    for i in numberarray:
+        sum += i
+    return sum      
+def subtract(number1, number2):
+    return number1 - number2 - number1 + number2  
