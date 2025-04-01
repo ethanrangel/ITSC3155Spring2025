@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Bio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+<header>
+    <h1>Meet Our Team</h1>
+    <!-- Example team logo -->
+    <img src="img/team-logo.png" alt="Team Logo" class="team-logo">
+
+    <!-- Navigation menu to switch between sections -->
+    <nav>
+        <button onclick="showSection('bios')">Team Bios</button>
+        <button onclick="showSection('vision')">Team Vision</button>
+    </nav>
+</header>
+
+<!-- Team bios section (default section) -->
+<div id="bios" class="container">
+    <!-- Each card represents an individual team member -->
+    <div class="card">
+        <img src="img/ethan.jpeg" alt="Ethan Rangel-Torres" class="team-logo">
+        <h2>Ethan Rangel-Torres</h2>
+        <p>Cloud Engineer</p>
+        <button onclick="toggleBio('bio1')">Show Bio</button>
+        <p id="bio1" class="bio">
+            Ethan is a passionate Cloud Engineer and student at UNC Charlotte, currently pursuing certifications in AWS and specializing in Infrastructure as Code (IaC) with tools like CloudFormation and Terraform. He enjoys automating deployment pipelines and has built multiple projects using EC2, S3, Lambda, and Route 53. His go-to language is Python, and he’s a strong advocate for scalable, cloud-native architectures.
+            <br><br><strong>Moodboard:</strong>
+            <ul>
+                <li>☁️ Favorite Cloud Service: AWS Lambda</li>
+                <li>🛠️ Favorite Tool: Terraform</li>
+                <li>📚 Influential Figure: Werner Vogels (CTO of Amazon)</li>
+                <li>⚽ Hobbies: Soccer, lifting, and learning new DevOps tools</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="img/irfan.jpeg" alt="Irfan Campara" class="team-logo">
+        <h2>Irfan Campara</h2>
+        <p>Research Analyst</p>
+        <button onclick="toggleBio('bio2')">Show Bio</button>
+        <p id="bio2" class="bio">
+            Irfan is a motivated Research Analyst with a strong interest in financial modeling and data-driven decision-making. A student at UNC Charlotte, he blends computer science and economics to analyze trends and evaluate investments. Irfan is especially interested in how machine learning is being used to drive financial forecasts. He’s known for his attention to detail and thoughtful approach to problem solving.
+            <br><br><strong>Moodboard:</strong>
+            <ul>
+                <li>📈 Favorite Stock: NVIDIA (NVDA)</li>
+                <li>📊 Favorite Tool: Microsoft Excel with Python integrations</li>
+                <li>🧠 Favorite Concept: Predictive analytics using regression models</li>
+                <li>🎧 Hobbies: Watching finance podcasts, investing, and chess</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="img/isaiah.jpeg" alt="Isaiah Lipford" class="team-logo">
+        <h2>Isaiah Lipford</h2>
+        <p>Software Developer</p>
+        <button onclick="toggleBio('bio3')">Show Bio</button>
+        <p id="bio3" class="bio">
+            Isaiah is a talented Software Developer and Instructional Assistant at UNC Charlotte, with a deep passion for artificial intelligence and robotics. He is fluent in C++ and Python, and loves experimenting with reinforcement learning and neural networks. Isaiah aims to develop intelligent systems that learn and adapt, and is especially inspired by cutting-edge work in robotics.
+            <br><br><strong>Moodboard:</strong>
+            <ul>
+                <li>🧠 Favorite Algorithm: Q-Learning</li>
+                <li>🤖 Favorite Area: Robotics + AI integration</li>
+                <li>👨‍🏫 Favorite Tool: Jupyter Notebooks + TensorFlow</li>
+                <li>🎮 Hobbies: Gaming, building bots, and mentoring peers</li>
+            </ul>
+        </p>
+    </div>
+</div>
+
+<!-- Team vision/mission statement section (hidden by default) -->
+<div id="vision" class="container" style="display: none;">
+    <h2>Our Mission Statement</h2>
+    <p>We are a team of passionate students from the University of North Carolina at Charlotte, each bringing unique strengths in cloud engineering, financial analysis, and software development. Our mission is to grow together through hands-on collaboration, leveraging our diverse backgrounds to solve real-world challenges with innovation and integrity.</p>
+
+    <p>We believe in learning by doing. Through group projects, internships, and coursework, we continuously push ourselves to stay ahead of the curve in a fast-changing tech landscape. As future professionals, we’re committed to using our skills not only to build high-impact solutions, but also to foster an inclusive environment where everyone feels empowered to contribute.</p>
+
+    <p>Our shared vision is to build a lasting impact, both within the UNC Charlotte community and beyond, by creating technology that is ethical, efficient, and transformative. Together, we are IEI: Intelligent, Evolving, and Inspired.</p>
+</div>
+
+<script src="script.js"></script> <!-- Link to external JavaScript file -->
+
+</body>
+</html>
+
