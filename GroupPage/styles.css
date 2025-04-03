@@ -18,11 +18,13 @@ header {
 .team-logo {
     width: 150px; /* Adjust the size as needed */
     margin-top: 10px;
+    border-radius: 20px;  
 }
 
 /* Menu button styling */
 header nav {
     margin-top: 10px;
+    border-radius: 20px;  
 }
 
 header nav button {
@@ -30,7 +32,7 @@ header nav button {
     color: white;
     border: none;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     margin: 0 5px;
 }
@@ -58,6 +60,7 @@ header nav button:hover {
     flex: 1 1 calc(30% - 40px);
     text-align: center;
     transition: transform 0.2s;
+    border-radius: 20px;  
 }
 
 .card:hover {
